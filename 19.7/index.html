@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Example</title>
+</head>
+<body>
+<div id="app">
+    <div>
+        <router-link to="/">首页</router-link>
+        <router-link to="/login">登录</router-link>
+        <router-link to="/post">文章管理</router-link>
+        <router-link to="/a">A</router-link>
+    </div>
+    <div>
+        <router-view></router-view>
+    </div>
+</div>
+<script src="../lib/vue.js"></script>
+<script src="../lib/vue-router.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

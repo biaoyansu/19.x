@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Example</title>
+    <style>
+        .sidebar {
+            float: left;
+            width: 30%;
+        }
+
+        .content {
+            float: left;
+            width: 70%;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <div>
+        <router-link to="/">首页</router-link>
+        <router-link to="/user">用户管理</router-link>
+        <router-link to="/post">帖子管理</router-link>
+    </div>
+    <div>
+        <router-view name="sidebar"></router-view>
+        <router-view name="content"></router-view>
+    </div>
+</div>
+<script src="../lib/vue.js"></script>
+<script src="../lib/vue-router.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
